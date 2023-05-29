@@ -8,8 +8,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import axios from 'axios';
 
 import React, { useState, useEffect } from 'react';
-import PrivateRoute from './Utils/PrivateRoute';
-import PublicRoute from './Utils/PublicRoute';
+// import PrivateRoute from './Utils/PrivateRoute';
+// import PublicRoute from './Utils/PublicRoute';
 import { getToken, removeUserSession, setUserSession } from './Utils/Common';
 
 function Home() {
@@ -56,8 +56,8 @@ function App() {
         <Navbar/>
           <Routes>
               <Route path="/" element={<Home />} />
-              <PublicRoute path="/login" element={<Login />} />
-              <PrivateRoute path="/dashboard" element={<Dashboard />} />    
+              <Route path="/login" element={<Login />} />
+              <Route path="/dashboard" element={<Dashboard />} />    
               <Route path="*" element={<NoMatch />} />
           </Routes>
         </Router>

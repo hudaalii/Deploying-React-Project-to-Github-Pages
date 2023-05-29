@@ -16,9 +16,9 @@ export default function Navbar() {
             <Link to="/">
               <img src={navLogo} width="200px" alt=""/>
             </Link>
-            <Link to="/dashboard">
+            {/* <Link to="/dashboard">
               Dashboard
-            </Link>
+            </Link> */}
             <Button 
             style={{ textTransform: 'none', backgroundColor: "#2962FF", borderRadius: 2, color: 'white' }}
             variant="contained"
